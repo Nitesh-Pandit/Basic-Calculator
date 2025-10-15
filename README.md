@@ -2,30 +2,27 @@
 
 -------Project Overview-------
 
-This project is an Advanced Calculator built using HTML, CSS, and JavaScript.
+This project is a Basic Calculator built using HTML, CSS, and JavaScript.
 It performs all basic arithmetic operations and includes extra features like Square Root (√), Percentage (%), and Memory Functions (M+, M-, MR, MC).
 It also has smart input validation — users cannot start with an operator or enter multiple consecutive operators — ensuring a clean and correct calculation process.
 
 --------Technologies Used---------
 
 HTML5 – Structure of the calculator
-
 CSS3 – Styling and layout (responsive and modern UI)
-
 JavaScript (ES6) – Logic and interactivity
 
 ----------Project Objectives----------
 
 To design a user-friendly calculator interface.
-
 To implement basic and advanced operations using JavaScript.
-
 To demonstrate error handling and input validation in a front-end project.
 
 
 ----------- Features--------------
 
- Basic Operations
+ -----Basic Operations-----
+ 
 Addition (+)
 Subtraction (−)
 Multiplication (×)
@@ -64,24 +61,18 @@ Click buttons or use your keyboard to type numbers and operations.
 Use:
 
 C → Clear the display
-
 DEL → Delete the last character
-
 = → Calculate the result
-
 √ → Find the square root
-
 % → Convert to percentage
-
 Use memory buttons to store and recall values:
-
 M+, M-, MR, MC
 
 ------------ Project Structure-----------
-📁 Advanced Calculator
+📁 Basic Calculator
 │
 ├── index.html       # Main HTML file
-├── style.css        # CSS for layout and design
+├── styles.css        # CSS for layout and design
 ├── script.js        # JavaScript logic
 └── README.md        # Project documentation
 
