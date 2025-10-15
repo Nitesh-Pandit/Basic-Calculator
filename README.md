@@ -69,6 +69,7 @@ Use memory buttons to store and recall values:
 M+, M-, MR, MC
 
 ------------ Project Structure-----------
+
 📁 Basic Calculator
 │
 ├── index.html       # Main HTML file
@@ -83,6 +84,7 @@ Division by zero shows "Error".
 Inputting invalid values for square root or percentage also displays "Error".
 
 ---------Example Calculations-----------
+
 Input	Output
 5 + 3 * 2	11
 √9	3
