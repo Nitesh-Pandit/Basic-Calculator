@@ -1,0 +1,85 @@
+/* Basic setup */
+* {
+  /* font-family: Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Page Layout */
+body {
+  background-color: darkgrey;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Calculator container */
+.calculator {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+/* Title */
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+/* Display area */
+.display {
+  width: 100%;
+  height: 60px;
+  background-color: #f3f3f3;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: right;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Grid layout for buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+/* Button styles */
+.btn {
+  padding: 15px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #d4d4d4;
+}
+.operator {
+  background-color: #07ff13;
+}
+.operator:hover {
+  background-color: #19b82f;
+}
+/* Equals button */
+.equals {
+  background-color: #28a745;
+  color: white;
+}
+.equals:hover {
+  background-color: #218838;
+}
+/* Memory function buttons (MC,MR,M+,M-) */
+.memory {
+  background-color: #6807e7;
+  color: white;
+}
+.memory:hover {
+  background-color: #5120a5;
+}
