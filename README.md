@@ -80,6 +80,13 @@ Basic Calculator/
 Open index.html in your browser.
 
  then you enter the any numbers then do the calculations according to the Arithmetic operations.
+ 
+ ## How to Use
+- Basic Operations
+- Enter numbers using number pad
+- Select operation (+, -, ×, ÷)
+- Enter second number
+- Press = for result
 ## License
 This project is open source and available under the [MIT License](LICENSE).
 
