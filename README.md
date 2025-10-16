@@ -69,12 +69,6 @@ Basic Calculator/
    ```bash
    git clone https://github.com/Nitesh-Pandit/Basic-Calculator
 
-## Development
-To modify the calculator:
-1. Edit `index.html` for structure changes
-2. Modify `styles.css` for styling updates
-3. Update `script.js` for functionality changes
-
 ## Browser Compatibility
 - Chrome (recommended)
 - Firefox
@@ -90,11 +84,11 @@ Open index.html in your browser.
 This project is open source and available under the [MIT License](LICENSE).
 
 ## Author
--Nitesh pandit
--Project: Basic Calculator
--Technologies:HTML,CSS,Java Script
+- Nitesh pandit
+- Project: Basic Calculator
+- Technologies:HTML,CSS,Java Script
 
-🏁 Conclusion
+## Conclusion
 
 This project showcases how HTML, CSS, and JavaScript can be combined to create a dynamic, user-friendly, and responsive web interface.
 It fulfills all project requirements and includes several enhancements for a better user experience.
