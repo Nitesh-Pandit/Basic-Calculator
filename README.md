@@ -1,143 +1,100 @@
------------xxxx-----Calculator-------xxxxxx------
+# Basic Calculator
 
--------Project Overview-------
+A modern calculator web application built with HTML, CSS, and JavaScript that provides basic arithmetic operations and advanced features like memory functions.
 
-This project is a Basic Calculator built using HTML, CSS, and JavaScript.
+## Features
 
-It performs all basic arithmetic operations and includes extra features like Square Root (√), Percentage (%), and Memory Functions (M+, M-, MR, MC).
+### Basic Operations
+- Addition (+)
+- Subtraction (-)
+- Multiplication (×)
+- Division (÷)
+- Percentage (%)
+- Square Root (√)
 
-It also has smart input validation — users cannot start with an operator or enter multiple consecutive operators — ensuring a clean and correct calculation process.
+### Memory Functions
+- MC (Memory Clear)
+- MR (Memory Recall)
+- M+ (Memory Add)
+- M- (Memory Subtract)
 
---------Technologies Used---------
+### Additional Features
+- Decimal point operations
+- Clear display (C)
+- Delete last digit (DEL)
+- Error handling
+- Keyboard support
 
-HTML5 – Structure of the calculator
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript (ES6+)
 
-CSS3 – Styling and layout (responsive and modern UI)
+## Usage
 
-JavaScript (ES6) – Logic and interactivity
+### Mouse Input
+- Click number buttons (0-9) to input numbers
+- Click operator buttons (+, -, ×, ÷) for operations
+- Click '=' for calculation result
+- Click 'C' to clear display
+- Click 'DEL' to delete last input
+- Click memory buttons (MC, MR, M+, M-) for memory operations
 
-----------Project Objectives----------
+### Keyboard Support
+- Numbers (0-9) for numeric input
+- Operators (+, -, *, /)
+- Enter key for calculation
+- Backspace for delete
+- Escape key for clear
 
-To design a user-friendly calculator interface.
+## Error Handling
+- Division by zero prevention
+- Invalid operation detection
+- Square root of negative numbers
+- Multiple operator prevention
 
-To implement basic and advanced operations using JavaScript.
+## File Structure
+```
+Basic Calculator/
+│
+├── index.html        # Main HTML structure
+├── styles.css        # CSS styling
+├── script.js         # JavaScript functionality
+└── README.md        # Documentation
+```
 
-To demonstrate error handling and input validation in a front-end project.
+## ⚙️ How to Run Locally
 
+1. **Download or clone the repository**
+   ```bash
+   git clone https://github.com/Nitesh-Pandit/Basic-Calculator
 
------------ Features--------------
+## Development
+To modify the calculator:
+1. Edit `index.html` for structure changes
+2. Modify `styles.css` for styling updates
+3. Update `script.js` for functionality changes
 
- -----Basic Operations-----
- 
-Addition (+)
+## Browser Compatibility
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
 
-Subtraction (−)
-
-Multiplication (×)
-
-Division (÷)
-
-Decimal point support
-
------------ Advanced Features--------------
-
-Square Root (√): Calculates the square root of the displayed value.
-
-Percentage (%): Converts the current value to a percentage.
-
----------Memory Functions---------
-
-M+ → Adds the current display value to memory.
-
-M- → Subtracts the current display value from memory.
-
-MR → Recalls the stored memory value.
-
-MC → Clears the memory.
-
---------- Smart Input Handling----------
-
-Operators (+, -, ×, ÷) cannot be pressed first.
-Prevents multiple consecutive operators (e.g., 5 ++ not allowed).
-
-Keyboard input supported for all keys.
-
-
-->-------Handles errors like -<--------     
-
-Division by zero
-
-Invalid or empty expressions
-
--------- How It Works---------
+## Run the Project
 
 Open index.html in your browser.
 
-Click buttons or use your keyboard to type numbers and operations.
+ then you enter the any numbers then do the calculations according to the Arithmetic operations.
+## License
+This project is open source and available under the [MIT License](LICENSE).
 
-Use:
+## Author
+-Nitesh pandit
+-Project: Basic Calculator
+-Technologies:HTML,CSS,Java Script
 
-C → Clear the display
+🏁 Conclusion
 
-DEL → Delete the last character
-
-= → Calculate the result
-
-√ → Find the square root
-
-% → Convert to percentage
-
-Use memory buttons to store and recall values:
-
-M+, M-, MR, MC
-
------------- Project Structure-----------
-
-📁 Basic Calculator
-│
-├── index.html       # Main HTML file
-
-├── styles.css        # CSS for layout and design
-
-├── script.js        # JavaScript logic
-
-└── README.md        # Project documentation
-
------------ Error Handling-----------
-
-Prevents invalid sequences like ++, --, */, etc.
-
-Division by zero shows "Error".
-
-Inputting invalid values for square root or percentage also displays "Error".
-
----------Example Calculations-----------
-
-Input	Output:
-
-5 + 3 * 2	11
-
-√9	3
-
-50 %	0.5
-
-M+ after 10 → MR	10
-
------------ Assessment Criteria-----------
-
-Criteria	Description
-
-Functionality	All operations perform correctly
-
-UI/UX	Clean, simple, and responsive interface
-
-Code Quality	Readable, modular, and commented
-
-Error Handling	Prevents invalid inputs gracefully
-
-Extra Features	Implemented square root, percentage, and memory
-
----------- Conclusion--------
-
-This project demonstrates strong understanding of HTML structure, CSS styling, and JavaScript logic handling.
-It effectively showcases validation, keyboard integration, and additional features — making it a well-rounded mini-project for web development practice.
+This project showcases how HTML, CSS, and JavaScript can be combined to create a dynamic, user-friendly, and responsive web interface.
+It fulfills all project requirements and includes several enhancements for a better user experience.
