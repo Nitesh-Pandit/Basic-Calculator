@@ -87,8 +87,6 @@ Open index.html in your browser.
 - Select operation (+, -, ×, ÷)
 - Enter second number
 - Press = for result
-## License
-This project is open source and available under the [MIT License](LICENSE).
 
 ## Author
 - Nitesh pandit
