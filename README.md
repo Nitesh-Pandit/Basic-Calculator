@@ -12,7 +12,7 @@ Includes memory functions, keyboard support, validations, and a responsive desig
 
 ## 🚀 Live Demo
 
-[Click here to see it live](https://yourusername.github.io/calculator/)
+[Click here to see it live](http://nitesh-pandit.github.io/Basic-Calculator/)
 
 ---
 
