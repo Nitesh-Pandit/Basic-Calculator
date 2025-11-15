@@ -1,4 +1,4 @@
-# 🧮 Advanced Calculator
+# 🧮 Basic Calculator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/yourusername/calculator)](https://github.com/yourusername/calculator/issues)
