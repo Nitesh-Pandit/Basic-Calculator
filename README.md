@@ -58,7 +58,6 @@ Calculator-Project/
 
 ## 🔧 How to Run
 
-```bash
 # Clone the repository
 git clone https://github.com/yourusername/calculator.git
 
@@ -94,4 +93,3 @@ This version includes:
 - **Preview image placeholder**  
 - Clear **installation instructions**  
 
----
