@@ -43,8 +43,15 @@ Includes memory functions, keyboard support, validations, and a responsive desig
 
 Calculator-Project/
 ├── index.html
+
+css
+
 ├── styles.css
+
+js
+
 ├── script.js
+
 └── README.md
 
 
@@ -64,32 +71,24 @@ git clone https://github.com/yourusername/calculator.git
 # Navigate into the project folder
 cd calculator
 
-# Open index.html in your browser
-Future Improvements
+Open index.html in your browser
+# Future Improvements
 
-Add scientific calculator mode
+- Add scientific calculator mode
 
-Add dark/light theme switch
+- Add dark/light theme switch
 
-Add history panel
+- Add history panel
 
-Add sound / button animations
+- Add sound / button animations
 
-🤝 Contributing
+# 🤝 Contributing
 
 Contributions, feedback, and suggestions are welcome!
 Feel free to open an issue or a pull request.
-📝 License
+
+# 📝 License
 
 This project is licensed under the MIT License
-.
 
-This version includes:  
-
-- Badges for **license, issues, stars, forks**  
-- Sections with **emoji headers** for a modern feel  
-- Clean **tables for tech stack**  
-- **Project structure** code block  
-- **Preview image placeholder**  
-- Clear **installation instructions**  
 
