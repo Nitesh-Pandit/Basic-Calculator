@@ -60,7 +60,9 @@ js
 
 ## 📸 Preview
 
-![App Screenshot](![alt text](image.png))![alt text](image-1.png)
+## App Screenshot
+
+(![alt text](image.png))![alt text](image-1.png)
 
 ---
 
