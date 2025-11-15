@@ -1,52 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Basic Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="calculator">
-        <h2>Calculator</h2>
-        <!-- Display section for showing input and output -->
-        <input type="text" id="display" class="display" disabled/>
-        <!-- All calculator buttons arranged in a grid -->
-        <div class="buttons">
-            <!-- Row1:Memory Functions -->
-             <button class="btn memory" onclick="memoryClear()">MC</button>
-             <button class="btn memory" onclick="memoryRecall()">MR</button>
-             <button class="btn memory" onclick="memoryAdd()">M+</button>
-             <button class="btn memory" onclick="memorySubtract()">M-</button>
+    <!-- Linkg css file -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="calculator" aria-label="Calculator">
+        <header class="calc-header">
+          <h1 class="title">Calculator</h1>
+          <div class="meta">
+            <span id="memory-indicator" aria-live="polite" title="Memory value"
+              >M: —</span
+            >
+          </div>
+        </header>
 
-             <!-- Row 2 Clear,Delete,Percentage,Divide-->
-              <button class="btn" onclick="clearDisplay()">C</button>
-              <button class="btn" onclick="deleteLast()">DEL</button>
-              <button class="btn" onclick="calculatePercentage()">%</button>
-              <button class="btn operator" onclick="appendToDisplay('/')">÷</button>
-            <!-- Row 3: 7 8 9 Multiply -->
-              <button class="btn" onclick="appendToDisplay('7')">7</button>
-                <button class="btn" onclick="appendToDisplay('8')">8</button>
-                <button class="btn" onclick="appendToDisplay('9')">9</button>
-                <button class="btn operator" onclick="appendToDisplay('*')">x</button>
-            <!-- Row 4: 4 5 6 Minus  -->
-                <button class="btn" onclick="appendToDisplay('4')">4</button>
-                <button class="btn" onclick="appendToDisplay('5')">5</button>
-                <button class="btn" onclick="appendToDisplay('6')">6</button>
-                <button class="btn operator" onclick="appendToDisplay('-')">-</button>
-            <!-- Row 5: 1 2 3 Plus-->
-                <button class="btn" onclick="appendToDisplay('1')">1</button>
-                <button class="btn" onclick="appendToDisplay('2')">2</button>
-                <button class="btn" onclick="appendToDisplay('3')">3</button>
-                <button class="btn operator" onclick="appendToDisplay('+')">+</button>
-            <!-- Row 6:0 Decimal Square Root Equals -->
-                <button class="btn" onclick="appendToDisplay('0')">0</button>
-                <button class="btn" onclick="appendToDisplay('.')">.</button>
-                <button class="btn" onclick="calculateSquareRoot()">√</button>
-                <button class="btn equal" onclick="calculate()">=</button>
+        <div class="display-wrap">
+          <input
+            id="display"
+            class="display"
+            type="text"
+            inputmode="decimal"
+            aria-label="Calculator display"
+            disabled
+            value=""
+          />
         </div>
-    </div>
-    <!-- JavaScript file Link -->
-    <script src="script.js"></script>
-</body>
+
+        <div class="buttons" role="group" aria-label="Calculator buttons">
+          <!-- Memory row -->
+          <button
+            type="button"
+            class="btn memory"
+            data-action="mc"
+            aria-label="Memory clear"
+          >
+            MC
+          </button>
+          <button
+            type="button"
+            class="btn memory"
+            data-action="mr"
+            aria-label="Memory recall"
+          >
+            MR
+          </button>
+          <button
+            type="button"
+            class="btn memory"
+            data-action="mplus"
+            aria-label="Memory add"
+          >
+            M+
+          </button>
+          <button
+            type="button"
+            class="btn memory"
+            data-action="mminus"
+            aria-label="Memory subtract"
+          >
+            M-
+          </button>
+
+          <!-- Clear and operators -->
+          <button
+            type="button"
+            class="btn alt"
+            data-action="ac"
+            aria-label="All clear"
+          >
+            AC
+          </button>
+          <button
+            type="button"
+            class="btn alt"
+            data-action="c"
+            aria-label="Clear entry"
+          >
+            C
+          </button>
+          <button
+            type="button"
+            class="btn alt"
+            data-action="del"
+            aria-label="Delete"
+          >
+            DEL
+          </button>
+          <button
+            type="button"
+            class="btn operator"
+            data-value="/"
+            aria-label="divide"
+          >
+            ÷
+          </button>
+
+          <!-- Numbers & operators -->
+          <button type="button" class="btn" data-value="7">7</button>
+          <button type="button" class="btn" data-value="8">8</button>
+          <button type="button" class="btn" data-value="9">9</button>
+          <button
+            type="button"
+            class="btn operator"
+            data-value="*"
+            aria-label="multiply"
+          >
+            ×
+          </button>
+
+          <button type="button" class="btn" data-value="4">4</button>
+          <button type="button" class="btn" data-value="5">5</button>
+          <button type="button" class="btn" data-value="6">6</button>
+          <button
+            type="button"
+            class="btn operator"
+            data-value="-"
+            aria-label="subtract"
+          >
+            −
+          </button>
+
+          <button type="button" class="btn" data-value="1">1</button>
+          <button type="button" class="btn" data-value="2">2</button>
+          <button type="button" class="btn" data-value="3">3</button>
+          <button
+            type="button"
+            class="btn operator"
+            data-value="+"
+            aria-label="add"
+          >
+            +
+          </button>
+
+          <button type="button" class="btn zero" data-value="0">0</button>
+          <button type="button" class="btn" data-value=".">.</button>
+          <button
+            type="button"
+            class="btn func"
+            data-action="sqrt"
+            aria-label="square root"
+          >
+            √
+          </button>
+          <button
+            type="button"
+            class="btn equal"
+            data-action="equal"
+            aria-label="equals"
+          >
+            =
+          </button>
+        </div>
+
+        <footer class="history-container" aria-live="polite">
+          <h2 class="sr-only">Calculation History</h2>
+          <ul
+            id="history"
+            class="history"
+            aria-label="Calculation history"
+          ></ul>
+        </footer>
+      </section>
+    </main>
+    <!-- Linking Js file -->
+    <script src="js/script.js"></script>
+  </body>
 </html>

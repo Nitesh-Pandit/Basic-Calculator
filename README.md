@@ -1,113 +1,118 @@
------------xxxx-----Calculator-------xxxxxx------
+🧮 Advanced Calculator
 
--------Project Overview-------
+A clean and modern calculator built using HTML, CSS, and JavaScript, featuring memory functions, validations, and keyboard support.
 
-This project is an Basic Calculator built using HTML, CSS, and JavaScript.
-It performs all basic arithmetic operations and includes extra features like Square Root (√), Percentage (%), and Memory Functions (M+, M-, MR, MC).
-It also has smart input validation — users cannot start with an operator or enter multiple consecutive operators — ensuring a clean and correct calculation process.
+🚀 Live Demo
 
---------Technologies Used---------
+👉 Add your GitHub Pages link here:
 
-HTML5 – Structure of the calculator
+https://yourusername.github.io/calculator/
 
-CSS3 – Styling and layout (responsive and modern UI)
+✨ Features
 
-JavaScript (ES6) – Logic and interactivity
+✔ Basic arithmetic operations
 
-----------Project Objectives----------
+✔ Square root & percentage
 
-To design a user-friendly calculator interface.
+✔ Memory functions (M+, M-, MR, MC)
 
-To implement basic and advanced operations using JavaScript.
+✔ Prevent double operators
 
-To demonstrate error handling and input validation in a front-end project.
+✔ Prevent division by zero
 
+✔ Keyboard input support
 
------------ Features--------------
+✔ Responsive and clean UI
 
- Basic Operations
-Addition (+)
-Subtraction (−)
-Multiplication (×)
-Division (÷)
-Decimal point support
+✔ Error handling for invalid expressions
 
------------ Advanced Features--------------
+🛠️ Technologies Used
+Technology	Purpose
+HTML5	Structure
+CSS3	Styling
+JavaScript	Logic & validation
+📦 Project Structure
+📁 Calculator-Project
+│── index.html
+│── styles.css
+│── script.js
+│── README.md
 
-Square Root (√): Calculates the square root of the displayed value.
-Percentage (%): Converts the current value to a percentage.
+📸 Preview
 
----------Memory Functions---------
+(Add screenshot here once ready)
 
-M+ → Adds the current display value to memory.
-M- → Subtracts the current display value from memory.
-MR → Recalls the stored memory value.
-MC → Clears the memory.
+![App Screenshot](your-image-link-here)
 
---------- Smart Input Handling----------
+🔧 How to Run the Project
+# Clone this repository
+git clone https://github.com/yourusername/calculator.git
 
-Operators (+, -, ×, ÷) cannot be pressed first.
-Prevents multiple consecutive operators (e.g., 5 ++ not allowed).
-Keyboard input supported for all keys.
+# Go to the project folder
+cd calculator
 
-->-------Handles errors like -<--------     
+# Open index.html in browser
 
-Division by zero
-Invalid or empty expressions
+🧩 Key Code Snippets
+➤ JavaScript (Operator Validation)
+function appendToDisplay(value) {
+    const last = display.value.slice(-1);
+    const operators = ["+", "-", "*", "/"];
 
--------- How It Works---------
+    if (operators.includes(value)) {
+        if (display.value === "" || operators.includes(last)) return;
+    }
 
-Open index.html in your browser.
+    display.value += value;
+}
 
-Click buttons or use your keyboard to type numbers and operations.
+➤ Memory Functions
+function memoryAdd() {
+    memory += parseFloat(display.value) || 0;
+}
 
-Use:
+function memorySubtract() {
+    memory -= parseFloat(display.value) || 0;
+}
 
-C → Clear the display
+function memoryRecall() {
+    display.value = memory;
+}
 
-DEL → Delete the last character
+function memoryClear() {
+    memory = 0;
+}
 
-= → Calculate the result
+➤ Keyboard Support
+document.addEventListener("keydown", (e) => {
+    if ((e.key >= "0" && e.key <= "9") || e.key === ".") {
+        appendToDisplay(e.key);
+    } else if ("+-*/".includes(e.key)) {
+        appendToDisplay(e.key);
+    } else if (e.key === "Enter") {
+        calculate();
+    } else if (e.key === "Backspace") {
+        deleteLast();
+    } else if (e.key === "Escape") {
+        clearDisplay();
+    }
+});
 
-√ → Find the square root
+📈 Future Improvements
 
-% → Convert to percentage
+ Add scientific calculator mode
 
-Use memory buttons to store and recall values:
+ Add dark/light theme switch
 
-M+, M-, MR, MC
+ Add history panel
 
------------- Project Structure-----------
-📁 Advanced Calculator
-│
-├── index.html       # Main HTML file
-├── style.css        # CSS for layout and design
-├── script.js        # JavaScript logic
-└── README.md        # Project documentation
+ Add sound / button animations
 
------------ Error Handling-----------
+🤝 Contributing
 
-Prevents invalid sequences like ++, --, */, etc.
-Division by zero shows "Error".
-Inputting invalid values for square root or percentage also displays "Error".
+Contributions and suggestions are welcome!
+Feel free to open an issue or a pull request.
 
----------Example Calculations-----------
-Input	Output
-5 + 3 * 2 =11
-√9 =3
-50 % =	0.5
-M+ after 10 → MR	10
+📝 License
 
------------ Assessment Criteria-----------
-
-Criteria	Description
-Functionality	All operations perform correctly
-UI/UX	Clean, simple, and responsive interface
-Code Quality	Readable, modular, and commented
-Error Handling	Prevents invalid inputs gracefully
-Extra Features	Implemented square root, percentage, and memory
-
----------- Conclusion--------
-
-This project demonstrates strong understanding of HTML structure, CSS styling, and JavaScript logic handling.
-It effectively showcases validation, keyboard integration, and additional features — making it a well-rounded mini-project for web development practice.
+This project is licensed under the MIT License.
