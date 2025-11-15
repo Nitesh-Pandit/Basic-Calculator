@@ -1,118 +1,97 @@
-🧮 Advanced Calculator
+# 🧮 Advanced Calculator
 
-A clean and modern calculator built using HTML, CSS, and JavaScript, featuring memory functions, validations, and keyboard support.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub issues](https://img.shields.io/github/issues/yourusername/calculator)](https://github.com/yourusername/calculator/issues)
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/calculator)](https://github.com/yourusername/calculator/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/calculator)](https://github.com/yourusername/calculator/network/members)
 
-🚀 Live Demo
+A **clean and modern calculator** built with HTML, CSS, and JavaScript.  
+Includes memory functions, keyboard support, validations, and a responsive design.
 
-👉 Add your GitHub Pages link here:
+---
 
-https://yourusername.github.io/calculator/
+## 🚀 Live Demo
 
-✨ Features
+[Click here to see it live](https://yourusername.github.io/calculator/)
 
-✔ Basic arithmetic operations
+---
 
-✔ Square root & percentage
+## ✨ Features
 
-✔ Memory functions (M+, M-, MR, MC)
+- ✅ Basic arithmetic operations (`+`, `-`, `*`, `/`)  
+- ✅ Square root & percentage  
+- ✅ Memory functions (`M+`, `M-`, `MR`, `MC`)  
+- ✅ Prevent double operators  
+- ✅ Prevent division by zero  
+- ✅ Keyboard input support  
+- ✅ Responsive and clean UI  
+- ✅ Error handling for invalid expressions  
 
-✔ Prevent double operators
+---
 
-✔ Prevent division by zero
+## 🛠️ Technologies Used
 
-✔ Keyboard input support
+| Technology | Purpose           |
+|------------|-----------------|
+| HTML5      | Structure        |
+| CSS3       | Styling          |
+| JavaScript | Logic & Validation |
 
-✔ Responsive and clean UI
+---
 
-✔ Error handling for invalid expressions
+## 📦 Project Structure
 
-🛠️ Technologies Used
-Technology	Purpose
-HTML5	Structure
-CSS3	Styling
-JavaScript	Logic & validation
-📦 Project Structure
-📁 Calculator-Project
-│── index.html
-│── styles.css
-│── script.js
-│── README.md
+Calculator-Project/
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
 
-📸 Preview
 
-(Add screenshot here once ready)
+---
+
+## 📸 Preview
 
 ![App Screenshot](your-image-link-here)
 
-🔧 How to Run the Project
-# Clone this repository
+---
+
+## 🔧 How to Run
+
+```bash
+# Clone the repository
 git clone https://github.com/yourusername/calculator.git
 
-# Go to the project folder
+# Navigate into the project folder
 cd calculator
 
-# Open index.html in browser
+# Open index.html in your browser
+Future Improvements
 
-🧩 Key Code Snippets
-➤ JavaScript (Operator Validation)
-function appendToDisplay(value) {
-    const last = display.value.slice(-1);
-    const operators = ["+", "-", "*", "/"];
+Add scientific calculator mode
 
-    if (operators.includes(value)) {
-        if (display.value === "" || operators.includes(last)) return;
-    }
+Add dark/light theme switch
 
-    display.value += value;
-}
+Add history panel
 
-➤ Memory Functions
-function memoryAdd() {
-    memory += parseFloat(display.value) || 0;
-}
-
-function memorySubtract() {
-    memory -= parseFloat(display.value) || 0;
-}
-
-function memoryRecall() {
-    display.value = memory;
-}
-
-function memoryClear() {
-    memory = 0;
-}
-
-➤ Keyboard Support
-document.addEventListener("keydown", (e) => {
-    if ((e.key >= "0" && e.key <= "9") || e.key === ".") {
-        appendToDisplay(e.key);
-    } else if ("+-*/".includes(e.key)) {
-        appendToDisplay(e.key);
-    } else if (e.key === "Enter") {
-        calculate();
-    } else if (e.key === "Backspace") {
-        deleteLast();
-    } else if (e.key === "Escape") {
-        clearDisplay();
-    }
-});
-
-📈 Future Improvements
-
- Add scientific calculator mode
-
- Add dark/light theme switch
-
- Add history panel
-
- Add sound / button animations
+Add sound / button animations
 
 🤝 Contributing
 
-Contributions and suggestions are welcome!
+Contributions, feedback, and suggestions are welcome!
 Feel free to open an issue or a pull request.
-
 📝 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License
+.
+
+This version includes:  
+
+- Badges for **license, issues, stars, forks**  
+- Sections with **emoji headers** for a modern feel  
+- Clean **tables for tech stack**  
+- **Project structure** code block  
+- **Preview image placeholder**  
+- Clear **installation instructions**  
+
+---
