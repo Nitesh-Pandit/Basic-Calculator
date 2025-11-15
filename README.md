@@ -67,7 +67,7 @@ js
 ## 🔧 How to Run
 
 # Clone the repository
-git clone ```bashhttps://github.com/Nitesh-Pandit/Basic-Calculator```
+git clone ```https://github.com/Nitesh-Pandit/Basic-Calculator```
 
 # Navigate into the project folder
 cd calculator
