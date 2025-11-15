@@ -42,6 +42,7 @@ Includes memory functions, keyboard support, validations, and a responsive desig
 ## 📦 Project Structure
 
 Calculator-Project/
+
 ├── index.html
 
 css
@@ -59,14 +60,14 @@ js
 
 ## 📸 Preview
 
-![App Screenshot](your-image-link-here)
+![App Screenshot](![alt text](image.png))![alt text](image-1.png)
 
 ---
 
 ## 🔧 How to Run
 
 # Clone the repository
-git clone https://github.com/yourusername/calculator.git
+git clone ```bashhttps://github.com/Nitesh-Pandit/Basic-Calculator```
 
 # Navigate into the project folder
 cd calculator
